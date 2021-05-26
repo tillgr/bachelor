@@ -1,0 +1,47 @@
+
+$whiteColor: rgb(255,255,255);
+$backgroundColor: #f1f3f7;
+$backgroundHighlightColor:#e8eaed;
+$textDescriptionColor:rgb(67,73,87);
+$textInputColor: rgb(0,0,0);
+$accentColor: #ff0050;
+$placeholderColor: #757575;
+
+$basicMargin:18px;
+$basicPadding:15px;
+$edgePadding:30px;
+
+$borderRadius:10px;
+
+$maxWidth:1800px;
+
+$iconFontSize:42px;
+
+
+@mixin shadow(){
+    // -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    // -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    // box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+
+    -webkit-box-shadow:-3px 3px 6px 0px #ddd, 
+    3px -0px 6px 0px rgb(252,252,252);
+    -moz-box-shadow:-3px 3px 6px 0px #ddd, 
+    3px -0px 6px 0px rgb(252,252,252);
+    box-shadow:  -3px 3px 6px 0px #ddd, 
+    3px -0px 6px 0px rgb(252,252,252);
+
+    // -webkit-box-shadow:-6px 6px 17px #d7d9dc, 
+    // 6px -6px 17px #f7f9fe;
+    // -moz-box-shadow:-6px 6px 17px #d7d9dc, 
+    // 6px -6px 17px #f7f9fe;
+    // box-shadow:  -6px 6px 17px #d7d9dc, 
+    // 6px -6px 17px #f7f9fe;
+}
+@mixin shadowTop(){
+    box-shadow:  -3px 3px 10px 0px #ddd, 
+    3px -3px 10px 0px rgb(252,252,252);
+    -moz-box-shadow:-3px 3px 10px 0px #ddd, 
+    3px -3px 10px 0px rgb(252,252,252);
+    -webkit-box-shadow:-3px 3px 6px 0px #ddd, 
+    3px -3px 10px 0px rgb(252,252,252);
+}
