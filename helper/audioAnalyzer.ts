@@ -8,7 +8,8 @@ export interface IAudioFeatures {
     sharpness:  number,
     // roughness:  number,
     richness:   number,
-    pitchiness: number
+    pitchiness: number,
+    chroma:     Array<number>
 }
 
 export default class AudioAnalyzer {
@@ -33,7 +34,7 @@ export default class AudioAnalyzer {
             "source": source,
             "bufferSize": this.windowSize,
             "numberOfMFCCCoefficients": this.numberOfMFCCCoefficients,
-            "featureExtractors": ["loudness","perceptualSharpness","perceptualSpread","spectralCentroid","powerSpectrum","spectralKurtosis"],
+            "featureExtractors": ["loudness","perceptualSharpness","perceptualSpread","spectralCentroid","powerSpectrum","spectralKurtosis","chroma"],
             "callback": (f) => { this.onFeatures(f); }
         });
     }
@@ -54,12 +55,13 @@ export default class AudioAnalyzer {
         let hop = WS * 0.25;
         for (let i = 0; i < buffer.length - WS; i += hop) {
             const r = Meyda.extract(
-                ["loudness","perceptualSharpness","perceptualSpread","spectralCentroid","powerSpectrum","spectralKurtosis"], 
+                ["loudness","perceptualSharpness","perceptualSpread","spectralCentroid","powerSpectrum","spectralKurtosis","chroma"], 
                 Meyda.windowing(buffer.slice(i, i + WS), "hanning")
             );
             features.push(r)
         }
-        let avg = {loudness:{total:0}, perceptualSharpness:0, perceptualSpread:0, spectralCentroid:0, powerSpectrum:new Float32Array((features[0] as any).powerSpectrum.length), spectralKurtosis:0};
+        let avg = {loudness:{total:0}, perceptualSharpness:0, perceptualSpread:0, spectralCentroid:0, powerSpectrum:new Float32Array((features[0] as any).powerSpectrum.length), chroma:new Array<number>(12), spectralKurtosis:0};
+        avg.chroma = [0,0,0,0,0,0,0,0,0,0,0,0];
         features.forEach((f: any) => {
             avg.loudness.total = avg.loudness.total + f.loudness.total;
             avg.perceptualSharpness = avg.perceptualSharpness + f.perceptualSharpness;
@@ -67,7 +69,10 @@ export default class AudioAnalyzer {
             avg.spectralCentroid = avg.spectralCentroid + f.spectralCentroid;
             avg.powerSpectrum = avg.powerSpectrum.map(function (num, idx) {
                 return num + f.powerSpectrum[idx];
-              });
+            });
+            avg.chroma = avg.chroma.map(function (num, idx) {
+                return num + f.chroma[idx];
+            });
             avg.spectralKurtosis = avg.spectralKurtosis + f.spectralKurtosis;
         });
         avg.loudness.total      = avg.loudness.total        / features.length;
@@ -76,6 +81,9 @@ export default class AudioAnalyzer {
         avg.spectralCentroid    = avg.spectralCentroid      / features.length;
         for(var i = 0; i < avg.powerSpectrum.length; i++) {
             avg.powerSpectrum[i] = avg.powerSpectrum[i] / features.length;
+        }
+        for(var i = 0; i < avg.chroma.length; i++) {
+            avg.chroma[i] = avg.chroma[i] / features.length;
         }
         avg.spectralKurtosis = avg.spectralKurtosis / features.length;
 
@@ -117,10 +125,14 @@ export default class AudioAnalyzer {
         f.pitch = Math.max(f.pitch * preNorm, 1.0);
         f.pitch = Math.log10(f.pitch) * postNorm;
 
+        f.chroma        = features.chroma;
+
         f.brightness    = features.spectralCentroid * this.invHWS;
         f.sharpness     = features.perceptualSharpness;
         f.richness      = features.perceptualSpread;
         f.pitchiness    = features.spectralKurtosis; //+ 85) / 6800;
+
+        console.log(f.chroma);
 
         return f;
     }
