@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/style/vars.scss";
+
 .global_layout{
   display:flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 <template>
-<div>  
+
     <article class="container">
       <section class="landing">
         <div class="title">
@@ -7,11 +7,11 @@
           <AudioPlayer :source="'A_1.wav'" :isAutoplay="true"  @audioBuffer="onAudioBuffer" @audioNode="onAudioNode" @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
         </div>
         <div class="container">
-          <D3Visual v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Visual>
+          <D3Glyph v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Glyph>
         </div>
       </section>
     </article>
-</div>
+
 </template>
 
 <script lang="ts">
@@ -24,15 +24,14 @@ import BasicCard from '@/components/ui/BasicCard.vue'
 import BasicButton from '@/components/ui/BasicButton.vue'
 import BasicContainer from '@/components/ui/BasicContainer.vue'
 
-import D3Visual from '@/components/visuals/D3Visual.vue'
+import D3Glyph from '~/components/visuals/D3Glyph.vue'
 import AudioPlayer from '@/components/AudioPlayer.vue'
 import AudioAnalyzer, { IAudioFeatures } from '@/helper/audioAnalyzer'
 import { ToneAudioBuffer } from "tone"
 
 @Component ({
     components: {
-        BasicOverlay, BasicCard, BasicRow, BasicContainer, BasicButton,
-        D3Visual,
+        BasicOverlay, BasicCard, BasicRow, BasicContainer, BasicButton, D3Glyph,
         AudioPlayer
     },
     middleware: [
@@ -121,5 +120,6 @@ export default class Main extends Vue {
     }
   }
 }
+
 
 </style>
