@@ -48,200 +48,83 @@ export default class D3Glyph extends Vue {
   }
 
   createGlyph() {
-    const rand = Math.random();
-    const rand2 = Math.random();
-    const rand3 = Math.random();
-    const rand4 = Math.random();
 
-    const length = (360 / 30) * this.length;
-    const average_loudness =
-      48 -
-      Math.round(
-        this.features.loudness * -1 * (20 / 54)
-      );
 
     const svg = d3
-      .select("#mir-" + this.name)
-      .append("svg")
-      .attr("width", "100%")
-      .attr("height", "100%")
-      .append("g")
-      .attr("transform", "translate(105, 105)")
-      .style("transform", `translate(50%, 50%)`);
-
-    //Dauer der Audiodatei
-    const generator = d3
-      .arc() // v4
-      .innerRadius(48)
-      .outerRadius(53)
-      .startAngle(0)
-      .endAngle((length * Math.PI * 2) / 360);
-
-    const generator_ = d3
-      .arc() // v4
-      .innerRadius(48)
-      .outerRadius(48)
-      .startAngle(0)
-      .endAngle(360);
+        .select("#mir-" + this.name)
+        .append("svg")
+        .attr("width", "100%")
+        .attr("height", "100%");
 
     svg
-      .append("path")
-      .attr("d", generator_ as any)
-      .attr("fill", "#000")
-      .attr("stroke", "black");
+        .append("g")
+        .attr("transform", "translate(105, 105)")
+        .style("transform", `translate(50%, 50%)`);
 
-    svg
-      .append("path")
-      .attr("d", generator as any)
-      .attr("fill", this.getColorForSoundType())
-      .attr("stroke", "black");
+    const g =  svg.selectAll("g");
 
-    //Lautheit
-    const generator3 = d3
-      .arc() // v4
-      .innerRadius(28)
-      .outerRadius(average_loudness)
-      .startAngle(0)
-      .endAngle(Math.PI * 2);
+    g.append("rect")
+        .attr("rx", 6)
+        .attr("ry", 6)
+        .attr("x", '-25%')
+        .attr("y", '-25%')
+        .attr("width", '50%')
+        .attr("height", '50%')
+        .style("fill", "blue"); //TODO: loudness = saturation, hue = pitch
 
-    svg
-      .append("path")
-      .attr("d", generator3 as any)
-      .attr("fill", this.getColorForSoundType())
-      .attr("stroke", "black");
+    g.append("circle")
+        .attr("cx", '0')
+        .attr("cy", '0')
+        .attr("r", "18%")
+        .style("fill", "white");
 
-    // Grundkreis
-    svg
-      .append("circle")
-      .style("fill", "#fff")
-      .attr("r", 28)
-      .attr("cx", 0)
-      .attr("cy", 0)
-      .attr("stroke", "black");
 
-    //Tonheit
-    const generator2 = d3
-      .arc() // v4
-      .innerRadius(26)
-      .outerRadius(28)
-      .startAngle(0)
-      .endAngle(
-        (this.features.pitch * 360 * Math.PI * 2) / 360
-      );
-    svg
-      .append("path")
-      .attr("d", generator2 as any)
-      .attr("fill", "#000")
-      .attr("stroke", "black");
 
-    if (rand3 > 0.3) {
-      svg
-        .append("line")
-        .style("stroke", "#000")
-        .style("stroke-width", 2)
-        .attr("x1", -27)
-        .attr("y1", 0)
-        .attr("x2", -11)
-        .attr("y2", 0); 
 
-      svg
-        .append("line")
-        .style("stroke", "#000")
-        .style("stroke-width", 2)
-        .attr("x1", 12)
-        .attr("y1", 0)
-        .attr("x2", 27)
-        .attr("y2", 0); 
-      if (rand3 > 0.6) {
-        svg
-          .append("line")
-          .style("stroke", "#000")
-          .style("stroke-width", 2)
-          .attr("x1", -19)
-          .attr("y1", 20)
-          .attr("x2", 19)
-          .attr("y2", 20); 
+    let centerShape = {
+      ul: '',
+      ur: '',
+      ll: '',
+      lr: '',
+      translateY: 0,
+      duplicated: false,
 
-        svg
-          .append("line")
-          .style("stroke", "#000")
-          .style("stroke-width", 2)
-          .attr("x1", -19)
-          .attr("y1", -20)
-          .attr("x2", 19)
-          .attr("y2", -20); 
+      calcTriangle(length: number){ //TODO: shape = sharpness muss noch möglich sein
+        let a; //kathete vertikal
+        let b = length/2;  //kathete horizontal
+        let c = length;    //hypothenuse
+
+        a = Math.sqrt( Math.pow(c, 2) - Math.pow(b, 2));
+
+        this.ul = `0 ${-a/2}`;
+        this.ur = `0 ${-a/2}`;
+        this.ll = `${-b} ${a/2}`;
+        this.lr = `${b} ${a/2}`;
+
+        if (!this.duplicated){
+          this.translateY = -length/10;
+          this.duplicated = true;
+        }
+        else this.translateY = 0;
       }
     }
 
-    if (rand < 0.5) {
-      svg
-        .append("circle")
-        .style("fill", this.getColorForSoundType(true))
-        .attr("r", 12)
-        .attr("cx", 0)
-        .attr("cy", 0)
-        .attr("stroke", "black")
-        .attr("stroke-width", "2px")
-        .attr("stroke-dasharray", rand2 < 0.5 ? "0, 0" : "2, 2");
-    } else {
-      svg
-        .append("rect")
-        .attr("x", -12)
-        .attr("y", -12)
-        .attr("width", 24)
-        .attr("height", 24)
-        .attr("stroke", "black")
-        .attr("stroke-width", "2px")
-        .attr("stroke-dasharray", rand2 < 0.5 ? "0, 0" : "2, 2")
-        .attr("fill", this.getColorForSoundType(true));
-    }
 
-    if (rand4 < 0.3) {
-      svg
-        .append("line")
-        .style("stroke", "#fff")
-        .style("stroke-width", 2)
-        .attr("x1", -10)
-        .attr("y1", 0)
-        .attr("x2", 10)
-        .attr("y2", 0); 
-    } else if (rand4 >= 0.3 && rand4 < 0.6) {
-      svg
-        .append("line")
-        .style("stroke", "#fff")
-        .style("stroke-width", 2)
-        .attr("x1", -10)
-        .attr("y1", 0)
-        .attr("x2", 0)
-        .attr("y2", -5); 
+    centerShape.calcTriangle(90)
 
-      svg
-        .append("line")
-        .style("stroke", "#fff")
-        .style("stroke-width", 2)
-        .attr("x1", 0)
-        .attr("y1", -5)
-        .attr("x2", 10)
-        .attr("y2", 0);
-    } else {
-      svg
-        .append("line")
-        .style("stroke", "#fff")
-        .style("stroke-width", 2)
-        .attr("x1", -10)
-        .attr("y1", 0)
-        .attr("x2", 0)
-        .attr("y2", -10);
+    g.append("path")
+        .attr('d', `M ${centerShape.ul} L${centerShape.ur} L${centerShape.ll} L${centerShape.lr} Z`)
+        .attr("stroke", 'darkblue') //TODO: hue = pitch
+        .style("fill", "transparent")
+        .attr("transform", `translate(0, ${centerShape.translateY})`);
 
-      svg
-        .append("line")
-        .style("stroke", "#fff")
-        .style("stroke-width", 2)
-        .attr("x1", 0)
-        .attr("y1", -10)
-        .attr("x2", 10)
-        .attr("y2", 0);
-    }
+    centerShape.calcTriangle(40)  //TODO: 40 = fullness
+
+    g.append("path")
+        .attr('d', `M ${centerShape.ul} L${centerShape.ur} L${centerShape.ll} L${centerShape.lr} Z`)
+        .style("fill", "blue")  //TODO brightness = brightness, hue = pitch
+        .attr("transform", `translate(0, ${centerShape.translateY})`);
+
   }
   getColorForSoundType(randOn = false): string {
     let rand = Math.random();
