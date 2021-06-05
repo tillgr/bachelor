@@ -132,8 +132,6 @@ export default class AudioAnalyzer {
         f.richness      = features.perceptualSpread;
         f.pitchiness    = features.spectralKurtosis; //+ 85) / 6800;
 
-        console.log(f.chroma);
-
         return f;
     }
 }

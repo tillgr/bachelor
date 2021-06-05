@@ -34,11 +34,11 @@ export default class D3Glyph extends Vue {
     default: () => {
       return {
         loudness: 0.5,
+        richness: 0.5,
         pitch: 0.5,
         brightness: 0.5,
-        richness: 0.5,
-        pitchiness: 0.5,
-        sharpness: 0.5
+        sharpness: 0.5,
+        pitchiness: 0.5
       } as IAudioFeatures
     }
   }) features!: IAudioFeatures;
@@ -61,7 +61,6 @@ export default class D3Glyph extends Vue {
 
   createGlyph() {
 
-
     const svg = d3
         .select("#mir-" + this.name)
         .append("svg")
@@ -76,15 +75,6 @@ export default class D3Glyph extends Vue {
     const g = svg.selectAll("g");
 
 
-    /*let saturation = 0.8; //0 bis 1
-    let size = 5;  /!*in %, 5 bis maxSize*!/  /!**width = height in %**!/
-    let maxSize = 20; /!*fixed, in %*!/ /!**width = height in %**!/
-    let hue = 12;
-    let brightness = 0.7; //0 bis 1
-    let roundness = 0;    //0 bis maxSize/2, in %
-    let roundnessInner = roundness * (size/maxSize)
-    let dissonanz;*/
-
     this.loudness = 0.8; /*0 bis 1*/
     /**saturation main body**/
     this.richness = 5;  /*in %, TODO:5 bis maxSize begrenzen*/
@@ -93,7 +83,7 @@ export default class D3Glyph extends Vue {
     /**size interior outer**/
     this.pitch = 12; /*30 degree angle*/
     /**hue for everything**/
-    let brightness = 0.7; /*0 bis 1*/
+    this.brightness = 0.7; /*0 bis 1*/
     /**brightness interior**/
     this.sharpness = 0;    //0 bis maxSize/2, in %
     /**shape of interior outer**/
@@ -186,6 +176,7 @@ export default class D3Glyph extends Vue {
 
     /*exterior*/
     //TODO: dissonanz -> punkte
+
   }
 
   getColorForSoundType(randOn = false): string {

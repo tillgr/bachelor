@@ -7,7 +7,8 @@
           <AudioPlayer :source="'A_1.wav'" :isAutoplay="true"  @audioBuffer="onAudioBuffer" @audioNode="onAudioNode" @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
         </div>
         <div class="container">
-          <D3Glyph v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Glyph>
+<!--          <D3Glyph v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Glyph>-->
+          <D3Pie v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Pie>
         </div>
       </section>
     </article>
@@ -28,9 +29,11 @@ import D3Glyph from '~/components/visuals/D3Glyph.vue'
 import AudioPlayer from '@/components/AudioPlayer.vue'
 import AudioAnalyzer, { IAudioFeatures } from '@/helper/audioAnalyzer'
 import { ToneAudioBuffer } from "tone"
+import D3Pie from "~/components/visuals/D3Pie.vue";
 
 @Component ({
     components: {
+      D3Pie,
         BasicOverlay, BasicCard, BasicRow, BasicContainer, BasicButton, D3Glyph,
         AudioPlayer
     },
