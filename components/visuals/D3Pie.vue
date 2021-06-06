@@ -27,18 +27,18 @@ import {defaultArg} from "tone";
     BasicButton,
   },
 })
-export default class D3Glyph extends Vue {
-  @Prop({default: ""}) name!: string;
+export default class D3Pie extends Vue {
+  @Prop({default: "D3Pie"}) name!: string;
   @Prop({default: ""}) label!: string;
   @Prop({default: 3}) length!: number;
   @Prop({
     default: () => {
       return {
-        loudness: 0.5,
-        richness: 0.5,
         pitch: 0.5,
         brightness: 0.5,
+        loudness: 0.5,
         sharpness: 0.5,
+        richness: 0.5,
         pitchiness: 0.5
       } as IAudioFeatures
     }
@@ -76,15 +76,15 @@ export default class D3Glyph extends Vue {
     const g = svg.selectAll("g");
 
     // Radius der Glyphe
-    let radius = 200;
+    let radius = 150;
 
-    // Daten-Array für D3
+    // Daten-Array für D3 TODO: sortierung sinnvoll?
     let data = [
-      {name: "loudness", value: ''},
-      {name: "richness", value: ''},
       {name: "pitch", value: ''},
       {name: "brightness", value: ''},
+      {name: "loudness", value: ''},
       {name: "sharpness", value: ''},
+      {name: "richness", value: ''},
       {name: "dissonance", value: ''},
     ];
     //console.log(data)

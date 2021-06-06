@@ -26,8 +26,8 @@ import * as d3 from "d3";
     BasicButton,
   },
 })
-export default class D3Glyph extends Vue {
-  @Prop({default: "D3Glyph"}) name!: string;
+export default class D3GlyphMix extends Vue {
+  @Prop({default: "D3GlyphMix"}) name!: string;
   @Prop({default: ""}) label!: string;
   @Prop({default: 3}) length!: number;
   @Prop({
@@ -76,20 +76,23 @@ export default class D3Glyph extends Vue {
 
 
     this.loudness = 0.8; /*0 bis 1*/
-    /**saturation main body**/
-    this.richness = 5;  /*in %, TODO:5 bis maxSize begrenzen*/
-    /**size interior inner**/
+    /**brightness main body**/
+    this.richness = 0.2;
+    /**brightness interior inner**/
     let maxSize = 20; /*fixed, in %*/
     /**size interior outer**/
-    this.pitch = 240; /*30 degree angle 130 bis 240 --> *110 + 130*/
+    let maxSizeInner = 16; /*fixed, in %*/
+    /**size interior outer**/
+    this.pitch = 12; /*30 degree angle*/
     /**hue for everything**/
-    this.brightness = 0.7; /*0 bis 0.9*/
-    /**brightness interior**/
-    this.sharpness = 5;    //0 bis maxSize/2, in %
+    this.brightness = 0.9; /*0 bis 0.9*/
+    /**brightness interior ring**/
+    this.sharpness = 0;    //0 bis maxSize/2, in %
     /**shape of interior outer**/
-    let sharpnessInner = this.sharpness * (this.richness / maxSize)
+    let sharpnessInner = this.sharpness * (maxSizeInner / maxSize)
     /**shape of interior inner**/
     let dissonanz;
+
 
     /*main body*/
     /**main shape**/
@@ -100,13 +103,15 @@ export default class D3Glyph extends Vue {
         .attr("y", '-25%')
         .attr("width", '50%')
         .attr("height", '50%')
-        .style("fill", d3.hsl(this.pitch, this.loudness, 0.5));
+        /*.style("fill", d3.hsl(this.pitch, 0.5, this.loudness));*/
+        .style("fill", d3.hsl(this.pitch, 0.5, this.loudness));
     /**white circle in the middle**/
     g.append("circle")
         .attr("cx", '0')
         .attr("cy", '0')
         .attr("r", "18%")
         .style("fill", "white");
+
 
     /*let centerShape = {
       ul: '',
@@ -152,7 +157,6 @@ export default class D3Glyph extends Vue {
         .style("fill", "blue")  //TODO brightness = brightness, hue = pitch
         .attr("transform", `translate(0, ${centerShape.translateY})`);
      */
-
     /*interior*/
     /**outline**/
     g.append("rect")
@@ -163,17 +167,17 @@ export default class D3Glyph extends Vue {
         .attr("width", `${maxSize}%`)
         .attr("height", `${maxSize}%`)
         .attr("stroke", d3.hsl(this.pitch, 0.5, this.brightness))
-        .attr("stroke-width", "2px")
+        .attr("stroke-width", "8px")
         .style("fill", "transparent");
     /**inner shape**/
     g.append("rect")
         .attr("rx", `${sharpnessInner}%`)
         .attr("ry", `${sharpnessInner}%`)
-        .attr("x", `-${this.richness / 2}%`)
-        .attr("y", `-${this.richness / 2}%`)
-        .attr("width", `${this.richness}%`)
-        .attr("height", `${this.richness}%`)
-        .style("fill", d3.hsl(this.pitch, 0.5, this.brightness));
+        .attr("x", `-${maxSizeInner / 2}%`)
+        .attr("y", `-${maxSizeInner / 2}%`)
+        .attr("width", `${maxSizeInner}%`)
+        .attr("height", `${maxSizeInner}%`)
+        .style("fill", d3.hsl(this.pitch, 0.5, this.richness));
 
     /*exterior*/
     //TODO: dissonanz -> punkte

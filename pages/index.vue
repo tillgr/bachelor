@@ -1,14 +1,16 @@
 <template>
 
-    <article class="container">
+    <article class="container" >
       <section class="landing">
         <div class="title">
           <h1>Example - {{features.loudness}}</h1>
           <AudioPlayer :source="'A_1.wav'" :isAutoplay="true"  @audioBuffer="onAudioBuffer" @audioNode="onAudioNode" @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
         </div>
-        <div class="container">
+        <div v-for="i in 3" :key="i" :id="i" :name="i" class="container">{{i}}
 <!--          <D3Glyph v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Glyph>-->
-          <D3Pie v-for="i in 3" :key="i" :id="i" :name="i"  :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Pie>
+          <D3Glyph v-if="i === 1" :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Glyph>
+          <D3GlyphMix v-else-if="i === 2" :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3GlyphMix>
+          <D3Pie v-else :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Pie>
         </div>
       </section>
     </article>
@@ -30,11 +32,14 @@ import AudioPlayer from '@/components/AudioPlayer.vue'
 import AudioAnalyzer, { IAudioFeatures } from '@/helper/audioAnalyzer'
 import { ToneAudioBuffer } from "tone"
 import D3Pie from "~/components/visuals/D3Pie.vue";
+import D3GlyphMix from "~/components/visuals/D3GlyphMix.vue";
 
 @Component ({
     components: {
       D3Pie,
-        BasicOverlay, BasicCard, BasicRow, BasicContainer, BasicButton, D3Glyph,
+      D3GlyphMix,
+      D3Glyph,
+        BasicOverlay, BasicCard, BasicRow, BasicContainer, BasicButton,
         AudioPlayer
     },
     middleware: [
