@@ -75,22 +75,28 @@ export default class D3GlyphMix extends Vue {
     const g = svg.selectAll("g");
 
 
-    this.loudness = 0.8; /*0 bis 1*/
+    let loudness = this.features["loudness"]*0.9; /*0 bis 0.9*/
     /**brightness main body**/
-    this.richness = 0.2;
+
+    let richness = this.features["richness"]*0.9; /*0 bis 0.9*/
     /**brightness interior inner**/
+
     let maxSize = 20; /*fixed, in %*/
     /**size interior outer**/
     let maxSizeInner = 16; /*fixed, in %*/
     /**size interior outer**/
-    this.pitch = 12; /*30 degree angle*/
+
+    let pitch = this.features["pitch"]*110 + 130; /*130 bis 240, in Grad, (differenz 110) --> *110 + 130*/
     /**hue for everything**/
-    this.brightness = 0.9; /*0 bis 0.9*/
+
+    let brightness = this.features["brightness"]*0.9; /*0 bis 0.9*/
     /**brightness interior ring**/
-    this.sharpness = 0;    //0 bis maxSize/2, in %
+
+    let sharpness = this.features["sharpness"]*(maxSize/2);    //0 bis maxSize/2, in %
     /**shape of interior outer**/
-    let sharpnessInner = this.sharpness * (maxSizeInner / maxSize)
+    let sharpnessInner = sharpness * (maxSizeInner / maxSize)
     /**shape of interior inner**/
+
     let dissonanz;
 
 
@@ -103,8 +109,8 @@ export default class D3GlyphMix extends Vue {
         .attr("y", '-25%')
         .attr("width", '50%')
         .attr("height", '50%')
-        /*.style("fill", d3.hsl(this.pitch, 0.5, this.loudness));*/
-        .style("fill", d3.hsl(this.pitch, 0.5, this.loudness));
+        /*.style("fill", d3.hsl(pitch, 0.5, this.loudness));*/
+        .style("fill", d3.hsl(pitch, 0.5, loudness));
     /**white circle in the middle**/
     g.append("circle")
         .attr("cx", '0')
@@ -160,13 +166,13 @@ export default class D3GlyphMix extends Vue {
     /*interior*/
     /**outline**/
     g.append("rect")
-        .attr("rx", `${this.sharpness}%`)
-        .attr("ry", `${this.sharpness}%`)
+        .attr("rx", `${sharpness}%`)
+        .attr("ry", `${sharpness}%`)
         .attr("x", `-${maxSize / 2}%`)
         .attr("y", `-${maxSize / 2}%`)
         .attr("width", `${maxSize}%`)
         .attr("height", `${maxSize}%`)
-        .attr("stroke", d3.hsl(this.pitch, 0.5, this.brightness))
+        .attr("stroke", d3.hsl(pitch, 0.5, brightness))
         .attr("stroke-width", "8px")
         .style("fill", "transparent");
     /**inner shape**/
@@ -177,7 +183,7 @@ export default class D3GlyphMix extends Vue {
         .attr("y", `-${maxSizeInner / 2}%`)
         .attr("width", `${maxSizeInner}%`)
         .attr("height", `${maxSizeInner}%`)
-        .style("fill", d3.hsl(this.pitch, 0.5, this.richness));
+        .style("fill", d3.hsl(pitch, 0.5, richness));
 
     /*exterior*/
     //TODO: dissonanz -> punkte

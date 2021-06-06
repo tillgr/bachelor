@@ -75,21 +75,29 @@ export default class D3Glyph extends Vue {
     const g = svg.selectAll("g");
 
 
-    this.loudness = 0.8; /*0 bis 1*/
+    let loudness = this.features["loudness"]; /*0 bis 1*/
     /**saturation main body**/
-    this.richness = 5;  /*in %, TODO:5 bis maxSize begrenzen*/
-    /**size interior inner**/
+
+    let minSize = 10; /*fixed, in %*/
+    /**size interior inner, minimun**/
     let maxSize = 20; /*fixed, in %*/
-    /**size interior outer**/
-    this.pitch = 240; /*30 degree angle 130 bis 240 --> *110 + 130*/
+    /**size interior outer, maximum, maximum inner**/
+    let richness = this.features["richness"]*(maxSize - minSize) + minSize;  /*in %, minSize bis maxSize*/
+    /**size interior inner**/
+
+    let pitch =  this.features["pitch"]*110 + 130; /*130 bis 240, in Grad, (differenz 110) --> *110 + 130*/
     /**hue for everything**/
-    this.brightness = 0.7; /*0 bis 0.9*/
+
+    let brightness = this.features["brightness"]*0.9; /*0 bis 0.9*/
     /**brightness interior**/
-    this.sharpness = 5;    //0 bis maxSize/2, in %
+
+    let sharpness = this.features["sharpness"]*(maxSize/2);    //0 bis maxSize/2, in %
     /**shape of interior outer**/
-    let sharpnessInner = this.sharpness * (this.richness / maxSize)
+    let sharpnessInner = sharpness * (richness / maxSize)
     /**shape of interior inner**/
+
     let dissonanz;
+
 
     /*main body*/
     /**main shape**/
@@ -100,7 +108,7 @@ export default class D3Glyph extends Vue {
         .attr("y", '-25%')
         .attr("width", '50%')
         .attr("height", '50%')
-        .style("fill", d3.hsl(this.pitch, this.loudness, 0.5));
+        .style("fill", d3.hsl(pitch, loudness, 0.5));
     /**white circle in the middle**/
     g.append("circle")
         .attr("cx", '0')
@@ -156,24 +164,24 @@ export default class D3Glyph extends Vue {
     /*interior*/
     /**outline**/
     g.append("rect")
-        .attr("rx", `${this.sharpness}%`)
-        .attr("ry", `${this.sharpness}%`)
+        .attr("rx", `${sharpness}%`)
+        .attr("ry", `${sharpness}%`)
         .attr("x", `-${maxSize / 2}%`)
         .attr("y", `-${maxSize / 2}%`)
         .attr("width", `${maxSize}%`)
         .attr("height", `${maxSize}%`)
-        .attr("stroke", d3.hsl(this.pitch, 0.5, this.brightness))
+        .attr("stroke", d3.hsl(pitch, 0.5, brightness))
         .attr("stroke-width", "2px")
         .style("fill", "transparent");
     /**inner shape**/
     g.append("rect")
         .attr("rx", `${sharpnessInner}%`)
         .attr("ry", `${sharpnessInner}%`)
-        .attr("x", `-${this.richness / 2}%`)
-        .attr("y", `-${this.richness / 2}%`)
-        .attr("width", `${this.richness}%`)
-        .attr("height", `${this.richness}%`)
-        .style("fill", d3.hsl(this.pitch, 0.5, this.brightness));
+        .attr("x", `-${richness / 2}%`)
+        .attr("y", `-${richness / 2}%`)
+        .attr("width", `${richness}%`)
+        .attr("height", `${richness}%`)
+        .style("fill", d3.hsl(pitch, 0.5, brightness));
 
     /*exterior*/
     //TODO: dissonanz -> punkte
