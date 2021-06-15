@@ -173,7 +173,7 @@ export default class D3GlyphMix extends Vue {
         .attr("width", `${maxSize}%`)
         .attr("height", `${maxSize}%`)
         .attr("stroke", d3.hsl(pitch, 0.5, brightness))
-        .attr("stroke-width", "8px")
+        .attr("stroke-width", "5px")
         .style("fill", "transparent");
     /**inner shape**/
     g.append("rect")

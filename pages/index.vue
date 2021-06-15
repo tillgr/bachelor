@@ -102,8 +102,8 @@ export default class Main extends Vue {
     justify-content: center;
 
     .box {
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       margin: $basicMargin;
     }
 
