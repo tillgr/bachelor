@@ -76,7 +76,7 @@ export default class D3Pie extends Vue {
     const g = svg.selectAll("g");
 
     // Radius der Glyphe
-    let radius = 150;
+    let radius = 66;
 
     // Daten-Array für D3 TODO: sortierung sinnvoll?
     let data = [

@@ -7,7 +7,7 @@
           <AudioPlayer :source="'A_1.wav'" :isAutoplay="true"  @audioBuffer="onAudioBuffer" @audioNode="onAudioNode" @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
         </div>
           <div v-for="currentType in GlyphTypes" class="container">
-            <component v-for="i in 3" :key="i" :id="i" :name="currentType + `-${i}`" v-bind:is="currentType" :features="features"   @click="(id)=>{onClick(id)}" class="box"></component>
+            <component v-for="i in 30" :key="i" :id="i" :name="currentType + `-${i}`" v-bind:is="currentType" :features="features"   @click="(id)=>{onClick(id)}" class="box"></component>
           </div>
       </section>
     </article>
@@ -102,8 +102,8 @@ export default class Main extends Vue {
     justify-content: center;
 
     .box {
-      width: 400px;
-      height: 400px;
+      width: 200px;
+      height: 200px;
       margin: $basicMargin;
     }
 
