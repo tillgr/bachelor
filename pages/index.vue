@@ -6,11 +6,9 @@
           <h1>Example - {{features.loudness}}</h1>
           <AudioPlayer :source="'A_1.wav'" :isAutoplay="true"  @audioBuffer="onAudioBuffer" @audioNode="onAudioNode" @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
         </div>
-        <div v-for="i in 3" :key="i" :id="i" :name="i" class="container">
-          <D3Glyph v-if="i === 1" :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Glyph>
-          <D3GlyphMix v-else-if="i === 2" :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3GlyphMix>
-          <D3Pie v-else :features="features"   @click="(id)=>{onClick(id)}" class="box"></D3Pie>
-        </div>
+          <div v-for="currentType in GlyphTypes" class="container">
+            <component v-for="i in 3" :key="i" :id="i" :name="currentType + `-${i}`" v-bind:is="currentType" :features="features"   @click="(id)=>{onClick(id)}" class="box"></component>
+          </div>
       </section>
     </article>
 
@@ -49,6 +47,8 @@ export default class Main extends Vue {
 
     analyzer = {} as AudioAnalyzer;
     features = {loudness:0,pitch:0,brightness:0,richness:0,pitchiness:0,sharpness:0} as IAudioFeatures;
+    //currentType = 'D3Glyph';
+    GlyphTypes = ['D3Glyph', 'D3GlyphMix', 'D3Pie'];
 
     created() {
     }  
