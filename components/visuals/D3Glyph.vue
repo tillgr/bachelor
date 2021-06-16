@@ -79,9 +79,9 @@ export default class D3Glyph extends Vue {
     /**saturation main body**/
 
     let minSize = 10; /*fixed, in %*/
-    /**size interior inner, minimun**/
+    /**size: interior inner (minimum)**/
     let maxSize = 20; /*fixed, in %*/
-    /**size interior outer, maximum, maximum inner**/
+    /**size: interior outer, interior inner (maximum)**/
     let richness = this.features["richness"]*(maxSize - minSize) + minSize;  /*in %, minSize bis maxSize*/
     /**size interior inner**/
 
