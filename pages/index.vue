@@ -107,7 +107,7 @@ export default class Main extends Vue {
   createPermutations(features: IAudioFeatures){
     let permutations: IAudioFeatures[] = [features];
 
-    for (let i = 0; i <5; i++){
+    for (let i = 0; i <4; i++){
       let currentObject = permutations[i];
 
       let permutation = {...currentObject};
