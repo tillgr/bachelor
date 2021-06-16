@@ -9,7 +9,18 @@
       </div>
       <div v-for="currentType in GlyphTypes"
            class="container">
-        <component v-for="i in 30"
+        <component v-for="(features, index) in permutatedFeatures"
+
+                   :id="index"
+                   :key="index"
+                   :name="currentType + '-' + index"
+                   v-bind:is="currentType"
+                   :features="features"
+                   @click="(id)=>{onClick(id)}"
+                   class="box">
+        </component>
+<!--        <div v-for="(features, index) in permutatedFeatures">{{features.brightness}} - {{features.richness}}</div>-->
+<!--        <component v-for="i in 30"
                    :key="i"
                    :id="i"
                    :name="currentType + `-${i}`"
@@ -17,7 +28,7 @@
                    :features="features"
                    @click="(id)=>{onClick(id)}"
                    class="box">
-        </component>
+        </component>-->
       </div>
     </section>
   </article>
@@ -59,12 +70,12 @@ export default class Main extends Vue {
   features = {loudness: 0, pitch: 0, brightness: 0, richness: 0, pitchiness: 0, sharpness: 0} as IAudioFeatures;
   //currentType = 'D3Glyph';
   GlyphTypes = ['D3Glyph', 'D3GlyphMix', 'D3Pie'];
+  permutatedFeatures: IAudioFeatures[] = [];
 
   created() {
   }
 
   mounted() {
-    this.createPermutations(this.features);
   }
 
   onClick(id: number) {
@@ -75,6 +86,8 @@ export default class Main extends Vue {
   onAudioBuffer(buffer: ToneAudioBuffer) {
     this.analyzer = new AudioAnalyzer();
     this.features = this.analyzer.extract(buffer.getChannelData(0)); // offline-analyser
+
+    this.permutatedFeatures = this.createPermutations(this.features);
   }
 
   onAudioNode(node: AudioNode, context: any) {
@@ -92,17 +105,18 @@ export default class Main extends Vue {
   }
 
   createPermutations(features: IAudioFeatures){
-    let permutations = [features];
+    let permutations: IAudioFeatures[] = [features];
 
     for (let i = 0; i <5; i++){
       let currentObject = permutations[i];
 
-      let permutation = Object.fromEntries(Object.entries(currentObject).map(([k, v]) => [k, +((v+0.2)%1)]));
-      console.log(permutation)
+      let permutation = {...currentObject};
+      for (let key in permutation){
+        permutation[key] = ++permutation[key];
+      }
 
       permutations[i+1] = permutation;
     }
-
     return permutations;
   }
 

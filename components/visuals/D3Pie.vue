@@ -50,7 +50,7 @@ export default class D3Pie extends Vue {
 
   mounted() {
     (this.$refs.canvas as Vue).$el.id = `mir-${this.name}`;
-    // this.createGlyph();
+    //this.createGlyph();
   }
 
   @Watch('features', {deep: true})
@@ -61,6 +61,7 @@ export default class D3Pie extends Vue {
   }
 
   createGlyph() {
+    console.log('createGlyph!')
 
     const svg = d3
         .select("#mir-" + this.name)
