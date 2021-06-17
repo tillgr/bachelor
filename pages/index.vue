@@ -7,28 +7,18 @@
         <AudioPlayer :source="'A_1.wav'" :isAutoplay="true" @audioBuffer="onAudioBuffer" @audioNode="onAudioNode"
                      @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
       </div>
-      <div v-for="currentType in GlyphTypes"
-           class="container">
-        <component v-for="(features, index) in permutatedFeatures"
-
-                   :id="index"
-                   :key="index"
-                   :name="currentType + '-' + index"
-                   v-bind:is="currentType"
-                   :features="features"
-                   @click="(id)=>{onClick(id)}"
-                   class="box">
-        </component>
-<!--        <div v-for="(features, index) in permutatedFeatures">{{features.brightness}} - {{features.richness}}</div>-->
-<!--        <component v-for="i in 30"
-                   :key="i"
-                   :id="i"
-                   :name="currentType + `-${i}`"
-                   v-bind:is="currentType"
-                   :features="features"
-                   @click="(id)=>{onClick(id)}"
-                   class="box">
-        </component>-->
+      <div class="container">
+        <template v-for="currentType in GlyphTypes">
+          <component v-for="(features, index) in permutatedFeatures"
+                     v-bind:is="currentType"
+                     :id="currentType + '-' + index"
+                     :key="currentType + '-' + index"
+                     :name="currentType + '-' + index"
+                     :features="features"
+                     @click="(id)=>{onClick(id)}"
+                     class="box">
+          </component>
+        </template>
       </div>
     </section>
   </article>
@@ -68,9 +58,10 @@ export default class Main extends Vue {
 
   analyzer = {} as AudioAnalyzer;
   features = {loudness: 0, pitch: 0, brightness: 0, richness: 0, pitchiness: 0, sharpness: 0} as IAudioFeatures;
-  //currentType = 'D3Glyph';
+  currentType = 'D3Glyph';
   GlyphTypes = ['D3Glyph', 'D3GlyphMix', 'D3Pie'];
   permutatedFeatures: IAudioFeatures[] = [];
+  count: number = 10;
 
   created() {
   }
@@ -87,7 +78,7 @@ export default class Main extends Vue {
     this.analyzer = new AudioAnalyzer();
     this.features = this.analyzer.extract(buffer.getChannelData(0)); // offline-analyser
 
-    this.permutatedFeatures = this.createPermutations(this.features);
+    this.permutatedFeatures = this.createPermutations(this.features, 10);
   }
 
   onAudioNode(node: AudioNode, context: any) {
@@ -107,16 +98,17 @@ export default class Main extends Vue {
   createPermutations(features: IAudioFeatures){
     let permutations: IAudioFeatures[] = [features];
 
-    for (let i = 0; i <4; i++){
+    for (let i = 0; i <this.count-1; i++){
       let currentObject = permutations[i];
 
       let permutation = {...currentObject};
       for (let key in permutation){
-        permutation[key] = ++permutation[key];
+        permutation[key] = (permutation[key] + (1/this.count)) % 1;
       }
 
       permutations[i+1] = permutation;
     }
+    console.log(permutations)
     return permutations;
   }
 

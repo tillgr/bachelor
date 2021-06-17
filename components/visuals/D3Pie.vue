@@ -50,7 +50,9 @@ export default class D3Pie extends Vue {
 
   mounted() {
     (this.$refs.canvas as Vue).$el.id = `mir-${this.name}`;
-    //this.createGlyph();
+    this.createGlyph();
+    /*console.log('mounted!')
+    console.log(this.features)*/
   }
 
   @Watch('features', {deep: true})

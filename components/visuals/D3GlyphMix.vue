@@ -49,7 +49,7 @@ export default class D3GlyphMix extends Vue {
 
   mounted() {
     (this.$refs.canvas as Vue).$el.id = `mir-${this.name}`;
-    // this.createGlyph();
+    this.createGlyph();
   }
 
   @Watch('features', {deep: true})
