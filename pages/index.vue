@@ -59,14 +59,14 @@ import {PermutationMode} from "~/helper/permutationMode"
 export default class Main extends Vue {
 
   analyzer = {} as AudioAnalyzer;
-  features = {loudness: 0, pitch: 0, brightness: 0, richness: 0, pitchiness: 0, sharpness: 0} as IAudioFeatures;
+  features = {pitch: 0, brightness: 0, loudness: 0, sharpness: 0, richness: 0, pitchiness: 0} as IAudioFeatures;
   currentType = 'D3Glyph';
   GlyphTypes = ['D3Glyph', 'D3GlyphMix', 'D3Pie'];
 
   permutatedFeatures: IAudioFeatures[] = [];
 
   //Variablen für jedes Test Setting
-  stepCount: number = 20;
+  stepCount: number = 5;
   currentPermutationMode: PermutationMode = PermutationMode.single;
   permutationKey = Object.keys(this.features)[0]; //0...4
 
@@ -119,7 +119,7 @@ export default class Main extends Vue {
       permutations[i+1] = permutation;
     }
     console.log(permutations)
-    return permutations;
+    return this.shuffle(permutations);
   }
 
   permutateSingleFeature(){
@@ -135,9 +135,26 @@ export default class Main extends Vue {
       permutations[i+1] = permutation;
     }
     console.log(permutations)
-    return permutations;
+    return this.shuffle(permutations);
   }
 
+  shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
 
 
 }
