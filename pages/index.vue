@@ -41,6 +41,7 @@ import AudioAnalyzer, {IAudioFeatures} from '@/helper/audioAnalyzer'
 import {ToneAudioBuffer} from "tone"
 import D3Pie from "~/components/visuals/D3Pie.vue";
 import D3GlyphMix from "~/components/visuals/D3GlyphMix.vue";
+import {PermutationMode} from "~/helper/permutationMode"
 
 @Component({
   components: {
@@ -54,14 +55,20 @@ import D3GlyphMix from "~/components/visuals/D3GlyphMix.vue";
     //'login'
   ]
 })
+
 export default class Main extends Vue {
 
   analyzer = {} as AudioAnalyzer;
-  features = {loudness: 0, pitch: 0, brightness: 0, richness: 0, pitchiness: 0, sharpness: 0} as IAudioFeatures;
+  features = {pitch: 0, brightness: 0, loudness: 0, sharpness: 0, richness: 0, pitchiness: 0} as IAudioFeatures;
   currentType = 'D3Glyph';
   GlyphTypes = ['D3Glyph', 'D3GlyphMix', 'D3Pie'];
+
   permutatedFeatures: IAudioFeatures[] = [];
-  count: number = 10;
+
+  //Variablen für jedes Test Setting
+  stepCount: number = 5;
+  currentPermutationMode: PermutationMode = PermutationMode.single;
+  permutationKey = Object.keys(this.features)[0]; //0...4
 
   created() {
   }
@@ -78,7 +85,10 @@ export default class Main extends Vue {
     this.analyzer = new AudioAnalyzer();
     this.features = this.analyzer.extract(buffer.getChannelData(0)); // offline-analyser
 
-    this.permutatedFeatures = this.createPermutations(this.features);
+    if (this.currentPermutationMode === PermutationMode.all){
+      this.permutatedFeatures = this.permutateAllFeatures();
+    }
+    else this.permutatedFeatures = this.permutateSingleFeature()
   }
 
   onAudioNode(node: AudioNode, context: any) {
@@ -95,22 +105,57 @@ export default class Main extends Vue {
     //this.analyzer.stop(); // online-analyser
   }
 
-  createPermutations(features: IAudioFeatures){
-    let permutations: IAudioFeatures[] = [features];
+  permutateAllFeatures(){
+    let permutations: IAudioFeatures[] = [this.features];
 
-    for (let i = 0; i <this.count-1; i++){
+    for (let i = 0; i <this.stepCount-1; i++){
       let currentObject = permutations[i];
 
       let permutation = {...currentObject};
       for (let key in permutation){
-        (permutation as any)[key] = ((permutation as any)[key] + (1/this.count)) % 1;
+        (permutation as any)[key] = ((permutation as any) + (1/this.stepCount)) % 1;
       }
 
       permutations[i+1] = permutation;
     }
     console.log(permutations)
-    return permutations;
+    return this.shuffle(permutations);
   }
+
+  permutateSingleFeature(){
+    let key = this.permutationKey
+    let permutations: IAudioFeatures[] = [this.features];
+
+    for (let i = 0; i <this.stepCount-1; i++){
+      let currentObject = permutations[i];
+
+      let permutation = {...currentObject};
+      (permutation as any)[key] = ((permutation as any) + (1/this.stepCount)) % 1;
+
+      permutations[i+1] = permutation;
+    }
+    console.log(permutations)
+    return this.shuffle(permutations);
+  }
+
+  shuffle(array:any[]) {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
+
 
 }
 
