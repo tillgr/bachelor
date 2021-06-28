@@ -63,7 +63,7 @@ export default class D3Pie extends Vue {
   }
 
   createGlyph() {
-    console.log('createGlyph!')
+    //console.log('createGlyph!')
 
     const svg = d3
         .select("#mir-" + this.name)
