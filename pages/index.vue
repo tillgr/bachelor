@@ -8,17 +8,17 @@
                      @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
       </div>
       <div class="container">
-        <template v-for="currentType in GlyphTypes">
+<!--        <template v-for="currentType in GlyphTypes">-->
           <component v-for="(features, index) in permutatedFeatures"
-                     v-bind:is="currentType"
-                     :id="currentType + '-' + index"
-                     :key="currentType + '-' + index"
-                     :name="currentType + '-' + index"
+                     v-bind:is="$data._currentType"
+                     :id="$data._currentType + '-' + index"
+                     :key="$data._currentType + '-' + index"
+                     :name="$data._currentType + '-' + index"
                      :features="features"
                      @click="(id)=>{onClick(id)}"
                      class="box">
           </component>
-        </template>
+<!--        </template>-->
       </div>
     </section>
   </article>
@@ -58,17 +58,33 @@ import {PermutationMode} from "~/helper/permutationMode"
 
 export default class Main extends Vue {
 
+  set currentType(value: string) {
+    this._currentType = value;
+  }
+  set stepCount(value: number) {
+    this._stepCount = value;
+  }
+  set currentPermutationMode(value: PermutationMode) {
+    this._currentPermutationMode = value;
+  }
+  set featureIndex(value: number) {
+    this._featureIndex = value;
+  }
+
   analyzer = {} as AudioAnalyzer;
   features = {pitch: 0, brightness: 0, loudness: 0, sharpness: 0, richness: 0, pitchiness: 0} as IAudioFeatures;
-  currentType = 'D3Glyph';
   GlyphTypes = ['D3Glyph', 'D3GlyphMix', 'D3Pie'];
 
-  permutatedFeatures: IAudioFeatures[] = [];
 
   //Variablen für jedes Test Setting
-  stepCount: number = 5;
-  currentPermutationMode: PermutationMode = PermutationMode.single;
-  permutationKey = Object.keys(this.features)[0]; //0...4
+  private _currentType: string = 'D3Glyph';
+  private _stepCount: number = 5;
+  private _currentPermutationMode: PermutationMode = PermutationMode.single;
+  private _featureIndex = 0; //0...4
+
+
+  permutationKey = Object.keys(this.features)[this._featureIndex];
+  permutatedFeatures: IAudioFeatures[] = [];
 
   created() {
   }
@@ -85,10 +101,11 @@ export default class Main extends Vue {
     this.analyzer = new AudioAnalyzer();
     this.features = this.analyzer.extract(buffer.getChannelData(0)); // offline-analyser
 
-    if (this.currentPermutationMode === PermutationMode.all){
+    if (this.$data._currentPermutationMode === PermutationMode.all){
       this.permutatedFeatures = this.permutateAllFeatures();
     }
     else this.permutatedFeatures = this.permutateSingleFeature()
+
   }
 
   onAudioNode(node: AudioNode, context: any) {
@@ -108,17 +125,21 @@ export default class Main extends Vue {
   permutateAllFeatures(){
     let permutations: IAudioFeatures[] = [this.features];
 
-    for (let i = 0; i <this.stepCount-1; i++){
+    for (let i = 0; i <this.$data._stepCount-1; i++){
       let currentObject = permutations[i];
 
       let permutation = {...currentObject};
       for (let key in permutation){
+<<<<<<< HEAD
         (permutation as any)[key] = ((permutation as any) + (1/this.stepCount)) % 1;
+=======
+        permutation[key] = (permutation[key] + (1/this.$data._stepCount)) % 1;
+>>>>>>> d9280f4a23748985c64df9b84d695df111abfdbc
       }
 
       permutations[i+1] = permutation;
     }
-    console.log(permutations)
+    //console.log(permutations)
     return this.shuffle(permutations);
   }
 
@@ -126,15 +147,19 @@ export default class Main extends Vue {
     let key = this.permutationKey
     let permutations: IAudioFeatures[] = [this.features];
 
-    for (let i = 0; i <this.stepCount-1; i++){
+    for (let i = 0; i <this.$data._stepCount-1; i++){
       let currentObject = permutations[i];
 
       let permutation = {...currentObject};
+<<<<<<< HEAD
       (permutation as any)[key] = ((permutation as any) + (1/this.stepCount)) % 1;
+=======
+      permutation[key] = (permutation[key] + (1/this.$data._stepCount)) % 1;
+>>>>>>> d9280f4a23748985c64df9b84d695df111abfdbc
 
       permutations[i+1] = permutation;
     }
-    console.log(permutations)
+    //console.log(permutations)
     return this.shuffle(permutations);
   }
 
