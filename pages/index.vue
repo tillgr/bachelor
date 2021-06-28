@@ -78,7 +78,7 @@ export default class Main extends Vue {
     this.analyzer = new AudioAnalyzer();
     this.features = this.analyzer.extract(buffer.getChannelData(0)); // offline-analyser
 
-    this.permutatedFeatures = this.createPermutations(this.features, 10);
+    this.permutatedFeatures = this.createPermutations(this.features);
   }
 
   onAudioNode(node: AudioNode, context: any) {
@@ -103,7 +103,7 @@ export default class Main extends Vue {
 
       let permutation = {...currentObject};
       for (let key in permutation){
-        permutation[key] = (permutation[key] + (1/this.count)) % 1;
+        (permutation as any)[key] = ((permutation as any)[key] + (1/this.count)) % 1;
       }
 
       permutations[i+1] = permutation;
@@ -137,7 +137,7 @@ export default class Main extends Vue {
     .box {
       width: 250px;
       height: 250px;
-      margin: $basicMargin;
+      // margin: $basicMargin;
     }
 
     .title {

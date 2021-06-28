@@ -110,7 +110,7 @@ export default class D3GlyphMix extends Vue {
         .attr("width", '50%')
         .attr("height", '50%')
         /*.style("fill", d3.hsl(pitch, 0.5, this.loudness));*/
-        .style("fill", d3.hsl(pitch, 0.5, loudness));
+        .style("fill", (d3 as any).hsl(pitch, 0.5, loudness));
     /**white circle in the middle**/
     g.append("circle")
         .attr("cx", '0')
@@ -172,7 +172,7 @@ export default class D3GlyphMix extends Vue {
         .attr("y", `-${maxSize / 2}%`)
         .attr("width", `${maxSize}%`)
         .attr("height", `${maxSize}%`)
-        .attr("stroke", d3.hsl(pitch, 0.5, brightness))
+        .attr("stroke", (d3 as any).hsl(pitch, 0.5, brightness))
         .attr("stroke-width", "5px")
         .style("fill", "transparent");
     /**inner shape**/
@@ -183,7 +183,7 @@ export default class D3GlyphMix extends Vue {
         .attr("y", `-${maxSizeInner / 2}%`)
         .attr("width", `${maxSizeInner}%`)
         .attr("height", `${maxSizeInner}%`)
-        .style("fill", d3.hsl(pitch, 0.5, richness));
+        .style("fill", (d3 as any).hsl(pitch, 0.5, richness));
 
     /*exterior*/
     //TODO: dissonanz -> punkte

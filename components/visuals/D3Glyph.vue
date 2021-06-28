@@ -1,8 +1,8 @@
 <template>
   <BasicCard class="d3_card" ref="canvas">
-    <p class="body_text overlay">
+    <!--<p class="body_text overlay">
       {{ name }}
-    </p>
+    </p>-->
     <p class="body_text overlay" style="margin-top: 155px;">
       {{ label }}
     </p>
@@ -108,7 +108,7 @@ export default class D3Glyph extends Vue {
         .attr("y", '-25%')
         .attr("width", '50%')
         .attr("height", '50%')
-        .style("fill", d3.hsl(pitch, loudness, 0.5));
+        .style("fill", (d3 as any).hsl(pitch, loudness, 0.5));
     /**white circle in the middle**/
     g.append("circle")
         .attr("cx", '0')
@@ -170,7 +170,7 @@ export default class D3Glyph extends Vue {
         .attr("y", `-${maxSize / 2}%`)
         .attr("width", `${maxSize}%`)
         .attr("height", `${maxSize}%`)
-        .attr("stroke", d3.hsl(pitch, 0.5, brightness))
+        .attr("stroke", (d3 as any).hsl(pitch, 0.5, brightness))
         .attr("stroke-width", "2px")
         .style("fill", "transparent");
     /**inner shape**/
@@ -181,7 +181,7 @@ export default class D3Glyph extends Vue {
         .attr("y", `-${richness / 2}%`)
         .attr("width", `${richness}%`)
         .attr("height", `${richness}%`)
-        .style("fill", d3.hsl(pitch, 0.5, brightness));
+        .style("fill", (d3 as any).hsl(pitch, 0.5, brightness));
 
     /*exterior*/
     //TODO: dissonanz -> punkte

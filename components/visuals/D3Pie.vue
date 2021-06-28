@@ -94,21 +94,21 @@ export default class D3Pie extends Vue {
 
     //Daten aus dem Analyzer in den Array eintragen
     for (let obj of data){
-      this.features[obj.name] !== undefined ?
-          obj['value'] = this.features[obj.name] : obj['value'] = 1;
+      (this.features as any)[obj.name] !== undefined ?
+          obj['value'] = (this.features as any)[obj.name] : (obj as any)['value'] = 1;
     }
 
     //Farbskala
     let colorScale = d3.scaleLinear()
         .domain([0, 1])
-        .range(['darkblue', 'lightblue']);
+        .range(['darkblue', 'lightblue'] as any);
 
     //Pie Generator mit gleich großen Anteilen für alle Größen
     let pie = d3.pie().value(1);
 
     //Arc Generator für das erstellen der Pfade
     let arc = g.selectAll("arc")
-        .data(pie(data))
+        .data(pie(data as any))
         .enter();
 
     // Pfade erstellen
@@ -117,11 +117,11 @@ export default class D3Pie extends Vue {
         .innerRadius(0);
 
     arc.append("path")
-        .attr("d", path)
-        .attr("fill", function(d) { return colorScale(d.data['value']); });
+        .attr("d", path as any)
+        .attr("fill", function(d) { return colorScale((d.data as any)['value']); });
 
     //Erstellte Pfade selektieren
-    let paths = g.selectChildren()._groups[0];
+    let paths = (g.selectChildren() as any)._groups[0];
     //Skalieren der Teile der Glyphe
     for (let i = 0; i < paths.length; i++) {
       paths[i].setAttribute("style", `transform:scale(${data[i].value}, ${data[i].value})`);
