@@ -151,7 +151,7 @@ export default class Main extends Vue {
 
       permutations[i+1] = permutation;
     }
-    console.log(permutations)
+    //console.log(permutations)
     return this.shuffle(permutations);
   }
 
