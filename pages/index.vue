@@ -130,7 +130,7 @@ export default class Main extends Vue {
 
       let permutation = {...currentObject};
       for (let key in permutation){
-        (permutation as any)[key] = ((permutation as any) + (1/this.stepCount)) % 1;
+        (permutation as any)[key] = ((permutation as any)[key] + (1/this.$data._stepCount)) % 1;
       }
 
       permutations[i+1] = permutation;
@@ -147,11 +147,11 @@ export default class Main extends Vue {
       let currentObject = permutations[i];
 
       let permutation = {...currentObject};
-      (permutation as any)[key] = ((permutation as any) + (1/this.stepCount)) % 1;
+      (permutation as any)[key] = ((permutation as any)[key] + (1/this.$data._stepCount)) % 1;
 
       permutations[i+1] = permutation;
     }
-    //console.log(permutations)
+    console.log(permutations)
     return this.shuffle(permutations);
   }
 
