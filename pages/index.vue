@@ -4,7 +4,7 @@
     <section class="landing">
       <div class="title">
         <h1>Example - {{ features.loudness }}</h1>
-        <AudioPlayer :source="'A_1.wav'" :isAutoplay="true" @audioBuffer="onAudioBuffer" @audioNode="onAudioNode"
+        <AudioPlayer :source="'./max/9aa2b1e0_raspiness.wav'" :isAutoplay="true" @audioBuffer="onAudioBuffer" @audioNode="onAudioNode"
                      @started="onAudioStart" @stopped="onAudioStop"></AudioPlayer>
       </div>
       <div class="container">
@@ -100,6 +100,8 @@ export default class Main extends Vue {
   onAudioBuffer(buffer: ToneAudioBuffer) {
     this.analyzer = new AudioAnalyzer();
     this.features = this.analyzer.extract(buffer.getChannelData(0)); // offline-analyser
+
+    console.log(this.features)
 
     if (this.$data._currentPermutationMode === PermutationMode.all){
       this.permutatedFeatures = this.permutateAllFeatures();
