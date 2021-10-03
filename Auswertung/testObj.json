@@ -1,0 +1,6163 @@
+[{
+  "id": 123,
+  "study": 3,
+  "subject": {
+    "id": 67,
+    "demographic": null,
+    "setup": null,
+    "data": null,
+    "created_at": "2021-07-09T19:22:42.499Z",
+    "updated_at": "2021-07-10T09:53:50.285Z",
+    "knowledgeresults": [
+      {
+        "id": 450,
+        "knowledge": 2,
+        "likert": 4,
+        "subject": 67,
+        "created_at": "2021-07-09T19:23:02.047Z",
+        "updated_at": "2021-07-09T19:23:02.069Z"
+      },
+      {
+        "id": 451,
+        "knowledge": 3,
+        "likert": 4,
+        "subject": 67,
+        "created_at": "2021-07-09T19:23:02.113Z",
+        "updated_at": "2021-07-09T19:23:02.146Z"
+      },
+      {
+        "id": 452,
+        "knowledge": 1,
+        "likert": 4,
+        "subject": 67,
+        "created_at": "2021-07-09T19:23:02.192Z",
+        "updated_at": "2021-07-09T19:23:02.210Z"
+      },
+      {
+        "id": 453,
+        "knowledge": 4,
+        "likert": 4,
+        "subject": 67,
+        "created_at": "2021-07-09T19:23:02.245Z",
+        "updated_at": "2021-07-09T19:23:02.264Z"
+      }
+    ],
+    "pretestresults": [
+      {
+        "id": 281,
+        "data": [
+          {
+            "id": 3,
+            "frequency": 1000,
+            "bandwidth": 160,
+            "result": {
+              "db": -75.4902,
+              "gain": 0.00016806992257333578,
+              "time": 408
+            }
+          },
+          {
+            "id": 2,
+            "frequency": 570,
+            "bandwidth": 120,
+            "result": {
+              "db": -73.72550000000001,
+              "gain": 0.00020593255129706953,
+              "time": 1066
+            }
+          },
+          {
+            "id": 4,
+            "frequency": 1600,
+            "bandwidth": 240,
+            "result": {
+              "db": -74.31373,
+              "gain": 0.00019244804338913648,
+              "time": 420
+            }
+          },
+          {
+            "id": 0,
+            "frequency": 50,
+            "bandwidth": 100,
+            "result": {
+              "db": -73.72550000000001,
+              "gain": 0.00020593255129706953,
+              "time": 461
+            }
+          },
+          {
+            "id": 5,
+            "frequency": 2500,
+            "bandwidth": 380,
+            "result": {
+              "db": -74.31373,
+              "gain": 0.00019244804338913648,
+              "time": 404
+            }
+          },
+          {
+            "id": 7,
+            "frequency": 7000,
+            "bandwidth": 1300,
+            "result": {
+              "db": -75.4902,
+              "gain": 0.00016806992257333578,
+              "time": 419
+            }
+          },
+          {
+            "id": 6,
+            "frequency": 4000,
+            "bandwidth": 700,
+            "result": {
+              "db": -73.72550000000001,
+              "gain": 0.00020593255129706953,
+              "time": 399
+            }
+          },
+          {
+            "id": 8,
+            "frequency": 13500,
+            "bandwidth": 3500,
+            "result": {
+              "db": -72.54903,
+              "gain": 0.00023580255146462203,
+              "time": 386
+            }
+          },
+          {
+            "id": 1,
+            "frequency": 250,
+            "bandwidth": 100,
+            "result": {
+              "db": -71.07843999999999,
+              "gain": 0.000279304543172522,
+              "time": 418
+            }
+          }
+        ],
+        "pretest": 1,
+        "subject": 67,
+        "created_at": "2021-07-09T19:22:56.578Z",
+        "updated_at": "2021-07-09T19:22:56.783Z"
+      }
+    ]
+  },
+  "created_at": "2021-07-09T19:31:20.107Z",
+  "updated_at": "2021-07-09T19:31:20.158Z",
+  "taskresults": [
+    {
+      "id": 620,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          }
+        ],
+        "selectedPermutationID": 4,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.5,
+          "brightness": 0.3521414780123324,
+          "loudness": 0.7087352771050646,
+          "pitch": 0.6075835821299205
+        }
+      },
+      "studyresult": 123,
+      "duration": 1.149,
+      "task": 0,
+      "run": 0,
+      "order": null,
+      "created_at": "2021-07-09T19:23:09.537Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 621,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 2,
+        "selectedFeature": {
+          "sharpness": 0.9,
+          "richness": 0.1,
+          "brightness": 0.5097086459026572,
+          "loudness": 0.4283038684167979,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.83,
+      "task": 0,
+      "run": 1,
+      "order": null,
+      "created_at": "2021-07-09T19:25:30.611Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 622,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          }
+        ],
+        "selectedPermutationID": 4,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.5,
+          "brightness": 0.11730568769734108,
+          "loudness": 0.7046238134558255,
+          "pitch": 0.4413643521721179
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.64,
+      "task": 0,
+      "run": 2,
+      "order": null,
+      "created_at": "2021-07-09T19:25:36.775Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 623,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.106455258104101,
+          "loudness": 0.33970987962725047,
+          "pitch": 0.33043997736393965
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.635,
+      "task": 0,
+      "run": 3,
+      "order": null,
+      "created_at": "2021-07-09T19:25:44.615Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 624,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.02822241636298254,
+          "loudness": 0.5906972001397574,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.435,
+      "task": 0,
+      "run": 4,
+      "order": null,
+      "created_at": "2021-07-09T19:25:50.742Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 625,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3737935648037656,
+          "loudness": 0.7060780890406967,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.438,
+      "task": 0,
+      "run": 5,
+      "order": null,
+      "created_at": "2021-07-09T19:25:55.943Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 626,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 4,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.5,
+          "brightness": 0.1704514448559697,
+          "loudness": 0.842540080379946,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.49,
+      "task": 0,
+      "run": 6,
+      "order": null,
+      "created_at": "2021-07-09T19:26:01.440Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 627,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3910867418940925,
+          "loudness": 1,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.518,
+      "task": 0,
+      "run": 7,
+      "order": null,
+      "created_at": "2021-07-09T19:26:08.036Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 628,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.27524864166806834,
+          "loudness": 1,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.411,
+      "task": 0,
+      "run": 8,
+      "order": null,
+      "created_at": "2021-07-09T19:26:13.659Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    },
+    {
+      "id": 629,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3521414780123324,
+          "loudness": 0.7087352771050646,
+          "pitch": 0.6075835821299205
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.408,
+      "task": 0,
+      "run": 9,
+      "order": null,
+      "created_at": "2021-07-09T19:26:18.614Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 630,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.11730568769734108,
+          "loudness": 0.7046238134558255,
+          "pitch": 0.4413643521721179
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.476,
+      "task": 0,
+      "run": 10,
+      "order": null,
+      "created_at": "2021-07-09T19:26:22.664Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 631,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3737935648037656,
+          "loudness": 0.7060780890406967,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.416,
+      "task": 0,
+      "run": 11,
+      "order": null,
+      "created_at": "2021-07-09T19:26:27.755Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 632,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3910867418940925,
+          "loudness": 1,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.58,
+      "task": 0,
+      "run": 12,
+      "order": null,
+      "created_at": "2021-07-09T19:26:34.985Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 633,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.02822241636298254,
+          "loudness": 0.5906972001397574,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.497,
+      "task": 0,
+      "run": 13,
+      "order": null,
+      "created_at": "2021-07-09T19:26:39.721Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 634,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.5097086459026572,
+          "loudness": 0.4283038684167979,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.347,
+      "task": 0,
+      "run": 14,
+      "order": null,
+      "created_at": "2021-07-09T19:26:44.550Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 635,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 4,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.5,
+          "brightness": 0.27524864166806834,
+          "loudness": 1,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.433,
+      "task": 0,
+      "run": 15,
+      "order": null,
+      "created_at": "2021-07-09T19:26:50.308Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    },
+    {
+      "id": 636,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          }
+        ],
+        "selectedPermutationID": 4,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.5,
+          "brightness": 0.106455258104101,
+          "loudness": 0.33970987962725047,
+          "pitch": 0.33043997736393965
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.607,
+      "task": 0,
+      "run": 16,
+      "order": null,
+      "created_at": "2021-07-09T19:26:57.447Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 637,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.1704514448559697,
+          "loudness": 0.842540080379946,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.4,
+      "task": 0,
+      "run": 17,
+      "order": null,
+      "created_at": "2021-07-09T19:27:02.522Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 638,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.27524864166806834,
+          "loudness": 1,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.391,
+      "task": 0,
+      "run": 18,
+      "order": null,
+      "created_at": "2021-07-09T19:27:08.260Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    },
+    {
+      "id": 639,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.02822241636298254,
+          "loudness": 0.5906972001397574,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.504,
+      "task": 0,
+      "run": 19,
+      "order": null,
+      "created_at": "2021-07-09T19:27:12.802Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 640,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3521414780123324,
+          "loudness": 0.7087352771050646,
+          "pitch": 0.6075835821299205
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.523,
+      "task": 0,
+      "run": 20,
+      "order": null,
+      "created_at": "2021-07-09T19:27:17.961Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 641,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.11730568769734108,
+          "loudness": 0.7046238134558255,
+          "pitch": 0.4413643521721179
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.47,
+      "task": 0,
+      "run": 21,
+      "order": null,
+      "created_at": "2021-07-09T19:27:22.068Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 642,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3910867418940925,
+          "loudness": 1,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 2.119,
+      "task": 0,
+      "run": 22,
+      "order": null,
+      "created_at": "2021-07-09T19:27:30.781Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 643,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.106455258104101,
+          "loudness": 0.33970987962725047,
+          "pitch": 0.33043997736393965
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.456,
+      "task": 0,
+      "run": 23,
+      "order": null,
+      "created_at": "2021-07-09T19:27:37.870Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 644,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.5097086459026572,
+          "loudness": 0.4283038684167979,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.431,
+      "task": 0,
+      "run": 24,
+      "order": null,
+      "created_at": "2021-07-09T19:27:42.029Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 645,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.1704514448559697,
+          "loudness": 0.842540080379946,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.412,
+      "task": 0,
+      "run": 25,
+      "order": null,
+      "created_at": "2021-07-09T19:27:47.154Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 646,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3737935648037656,
+          "loudness": 0.7060780890406967,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.754,
+      "task": 0,
+      "run": 26,
+      "order": null,
+      "created_at": "2021-07-09T19:27:52.653Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 647,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.5097086459026572,
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.5097086459026572,
+          "loudness": 0.4283038684167979,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.448,
+      "task": 0,
+      "run": 27,
+      "order": null,
+      "created_at": "2021-07-09T19:27:57.021Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 648,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.02822241636298254,
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.02822241636298254,
+          "loudness": 0.5906972001397574,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.493,
+      "task": 0,
+      "run": 28,
+      "order": null,
+      "created_at": "2021-07-09T19:28:02.250Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 649,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.1704514448559697,
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.1704514448559697,
+          "loudness": 0.842540080379946,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 2.157,
+      "task": 0,
+      "run": 29,
+      "order": null,
+      "created_at": "2021-07-09T19:28:09.566Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 650,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3521414780123324,
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3521414780123324,
+          "loudness": 0.7087352771050646,
+          "pitch": 0.6075835821299205
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.395,
+      "task": 0,
+      "run": 30,
+      "order": null,
+      "created_at": "2021-07-09T19:28:14.797Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 651,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.27524864166806834,
+            "loudness": 1,
+            "pitch": 0.3115456969192398
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.27524864166806834,
+          "loudness": 1,
+          "pitch": 0.3115456969192398
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.405,
+      "task": 0,
+      "run": 31,
+      "order": null,
+      "created_at": "2021-07-09T19:28:20.565Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    },
+    {
+      "id": 652,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.11730568769734108,
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.11730568769734108,
+          "loudness": 0.7046238134558255,
+          "pitch": 0.4413643521721179
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.491,
+      "task": 0,
+      "run": 32,
+      "order": null,
+      "created_at": "2021-07-09T19:28:24.654Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 653,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.106455258104101,
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.106455258104101,
+          "loudness": 0.33970987962725047,
+          "pitch": 0.33043997736393965
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.541,
+      "task": 0,
+      "run": 33,
+      "order": null,
+      "created_at": "2021-07-09T19:28:31.566Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 654,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3910867418940925,
+            "loudness": 1,
+            "pitch": 0.24239434783609903
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3910867418940925,
+          "loudness": 1,
+          "pitch": 0.24239434783609903
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.364,
+      "task": 0,
+      "run": 34,
+      "order": null,
+      "created_at": "2021-07-09T19:28:41.896Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 655,
+      "data": {
+        "permutationSteps": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "permutatedFeatureNames": [
+          "richness",
+          "sharpness"
+        ],
+        "displayedPermutations": [
+          {
+            "sharpness": 0.1,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.1,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.5,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.1,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.5,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          },
+          {
+            "sharpness": 0.9,
+            "richness": 0.9,
+            "brightness": 0.3737935648037656,
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908
+          }
+        ],
+        "selectedPermutationID": 7,
+        "selectedFeature": {
+          "sharpness": 0.5,
+          "richness": 0.9,
+          "brightness": 0.3737935648037656,
+          "loudness": 0.7060780890406967,
+          "pitch": 0.17992497953194908
+        }
+      },
+      "studyresult": 123,
+      "duration": 0.48,
+      "task": 0,
+      "run": 35,
+      "order": null,
+      "created_at": "2021-07-09T19:28:47.204Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 656,
+      "data": {
+        "selectedGlyph": "D3GlyphMix",
+        "displayedGlyphs": [
+          "D3Pie",
+          "D3GlyphMix",
+          "D3Glyph"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.503,
+      "task": 1,
+      "run": 0,
+      "order": null,
+      "created_at": "2021-07-09T19:28:54.234Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 657,
+      "data": {
+        "selectedGlyph": "D3Pie",
+        "displayedGlyphs": [
+          "D3Glyph",
+          "D3Pie",
+          "D3GlyphMix"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.486,
+      "task": 1,
+      "run": 1,
+      "order": null,
+      "created_at": "2021-07-09T19:28:58.561Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 658,
+      "data": {
+        "selectedGlyph": "D3Glyph",
+        "displayedGlyphs": [
+          "D3Pie",
+          "D3Glyph",
+          "D3GlyphMix"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.53,
+      "task": 1,
+      "run": 2,
+      "order": null,
+      "created_at": "2021-07-09T19:29:04.067Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 659,
+      "data": {
+        "selectedGlyph": "D3GlyphMix",
+        "displayedGlyphs": [
+          "D3Glyph",
+          "D3GlyphMix",
+          "D3Pie"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.59,
+      "task": 1,
+      "run": 3,
+      "order": null,
+      "created_at": "2021-07-09T19:29:10.628Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 660,
+      "data": {
+        "selectedGlyph": "D3Pie",
+        "displayedGlyphs": [
+          "D3GlyphMix",
+          "D3Pie",
+          "D3Glyph"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.625,
+      "task": 1,
+      "run": 4,
+      "order": null,
+      "created_at": "2021-07-09T19:29:17.343Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 661,
+      "data": {
+        "selectedGlyph": "D3Glyph",
+        "displayedGlyphs": [
+          "D3Pie",
+          "D3Glyph",
+          "D3GlyphMix"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.669,
+      "task": 1,
+      "run": 5,
+      "order": null,
+      "created_at": "2021-07-09T19:29:23.320Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    },
+    {
+      "id": 662,
+      "data": {
+        "selectedGlyph": "D3Glyph",
+        "displayedGlyphs": [
+          "D3GlyphMix",
+          "D3Glyph",
+          "D3Pie"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.629,
+      "task": 1,
+      "run": 6,
+      "order": null,
+      "created_at": "2021-07-09T19:29:28.111Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 663,
+      "data": {
+        "selectedGlyph": "D3Pie",
+        "displayedGlyphs": [
+          "D3Glyph",
+          "D3Pie",
+          "D3GlyphMix"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.711,
+      "task": 1,
+      "run": 7,
+      "order": null,
+      "created_at": "2021-07-09T19:29:32.416Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 664,
+      "data": {
+        "selectedGlyph": "D3GlyphMix",
+        "displayedGlyphs": [
+          "D3Pie",
+          "D3GlyphMix",
+          "D3Glyph"
+        ]
+      },
+      "studyresult": 123,
+      "duration": 0.932,
+      "task": 1,
+      "run": 8,
+      "order": null,
+      "created_at": "2021-07-09T19:29:40.172Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 665,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          7,
+          3,
+          4,
+          9,
+          2,
+          8,
+          6,
+          5,
+          1
+        ],
+        "selectedGlyphOfSound": "5"
+      },
+      "studyresult": 123,
+      "duration": 0.412,
+      "task": 2,
+      "run": 0,
+      "order": null,
+      "created_at": "2021-07-09T19:29:46.750Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    },
+    {
+      "id": 666,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          1,
+          4,
+          8,
+          7,
+          6,
+          5,
+          2,
+          9,
+          3
+        ],
+        "selectedGlyphOfSound": "9"
+      },
+      "studyresult": 123,
+      "duration": 0.553,
+      "task": 2,
+      "run": 1,
+      "order": null,
+      "created_at": "2021-07-09T19:29:51.075Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 667,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          5,
+          2,
+          4,
+          6,
+          7,
+          1,
+          8,
+          3,
+          9
+        ],
+        "selectedGlyphOfSound": "3"
+      },
+      "studyresult": 123,
+      "duration": 0.503,
+      "task": 2,
+      "run": 2,
+      "order": null,
+      "created_at": "2021-07-09T19:29:57.940Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 668,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          1,
+          3,
+          6,
+          7,
+          9,
+          5,
+          2,
+          8,
+          4
+        ],
+        "selectedGlyphOfSound": "8"
+      },
+      "studyresult": 123,
+      "duration": 0.637,
+      "task": 2,
+      "run": 3,
+      "order": null,
+      "created_at": "2021-07-09T19:30:03.548Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 669,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          3,
+          1,
+          2,
+          7,
+          6,
+          5,
+          8,
+          9,
+          4
+        ],
+        "selectedGlyphOfSound": "9"
+      },
+      "studyresult": 123,
+      "duration": 0.54,
+      "task": 2,
+      "run": 4,
+      "order": null,
+      "created_at": "2021-07-09T19:30:08.782Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 670,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          2,
+          7,
+          6,
+          9,
+          1,
+          4,
+          5,
+          3,
+          8
+        ],
+        "selectedGlyphOfSound": "3"
+      },
+      "studyresult": 123,
+      "duration": 0.422,
+      "task": 2,
+      "run": 5,
+      "order": null,
+      "created_at": "2021-07-09T19:30:15.221Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 671,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          7,
+          2,
+          1,
+          4,
+          5,
+          8,
+          3,
+          9,
+          6
+        ],
+        "selectedGlyphOfSound": "9"
+      },
+      "studyresult": 123,
+      "duration": 0.798,
+      "task": 2,
+      "run": 6,
+      "order": null,
+      "created_at": "2021-07-09T19:30:20.726Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 672,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          9,
+          3,
+          2,
+          6,
+          1,
+          4,
+          7,
+          8,
+          5
+        ],
+        "selectedGlyphOfSound": "8"
+      },
+      "studyresult": 123,
+      "duration": 0.695,
+      "task": 2,
+      "run": 7,
+      "order": null,
+      "created_at": "2021-07-09T19:30:26.038Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 673,
+      "data": {
+        "glyphTypeName": "D3Glyph",
+        "displayedSounds": [
+          6,
+          3,
+          5,
+          7,
+          8,
+          2,
+          1,
+          9,
+          4
+        ],
+        "selectedGlyphOfSound": "9"
+      },
+      "studyresult": 123,
+      "duration": 0.604,
+      "task": 2,
+      "run": 8,
+      "order": null,
+      "created_at": "2021-07-09T19:30:30.812Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 674,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          4,
+          9,
+          7,
+          8,
+          2,
+          5,
+          3,
+          6,
+          1
+        ],
+        "selectedGlyphOfSound": "6"
+      },
+      "studyresult": 123,
+      "duration": 0.794,
+      "task": 2,
+      "run": 9,
+      "order": null,
+      "created_at": "2021-07-09T19:30:37.609Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 6,
+          "title": "Sliding door opening and closing",
+          "copyleft": null,
+          "data": {
+            "loudness": 1,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8131951071778453,
+              0.8059723060018793,
+              0.8253252503900033,
+              0.806103617569609,
+              0.8336549356588602,
+              0.8194482825076917,
+              0.798413554311183,
+              0.8035561393939668,
+              0.7977564558539527,
+              0.8245954383000964,
+              0.7984244968281967,
+              0.7693520232999793
+            ],
+            "brightness": 0.0782173483788185,
+            "sharpness": 0.6162081570360276,
+            "richness": 0.8949510266843062,
+            "pitchiness": -1.1720356054214167
+          },
+          "published_at": "2021-07-08T19:22:08.411Z",
+          "created_at": "2021-07-08T19:22:06.931Z",
+          "updated_at": "2021-07-08T19:22:08.473Z"
+        }
+      ]
+    },
+    {
+      "id": 675,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          3,
+          1,
+          2,
+          7,
+          5,
+          9,
+          4,
+          6,
+          8
+        ],
+        "selectedGlyphOfSound": "6"
+      },
+      "studyresult": 123,
+      "duration": 0.5,
+      "task": 2,
+      "run": 10,
+      "order": null,
+      "created_at": "2021-07-09T19:30:41.942Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 5,
+          "title": "Reverse Mapex Ride (Harmonic)",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7046238134558255,
+            "pitch": 0.4413643521721179,
+            "chroma": [
+              0.6909494851643035,
+              0.7158350062351148,
+              0.8715579530985035,
+              0.890940773832332,
+              0.7873258049205478,
+              0.7000230673125137,
+              0.719791550804714,
+              0.7593691240417886,
+              0.769953593487807,
+              0.8216841902250042,
+              0.7849213953407183,
+              0.6772630225875128
+            ],
+            "brightness": 0.023461137539468217,
+            "sharpness": 0.7746030214460868,
+            "richness": 0.8677375255657408,
+            "pitchiness": 48.76131272046125
+          },
+          "published_at": "2021-07-08T19:21:09.617Z",
+          "created_at": "2021-07-08T19:21:05.749Z",
+          "updated_at": "2021-07-08T19:21:09.690Z"
+        }
+      ]
+    },
+    {
+      "id": 676,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          6,
+          3,
+          7,
+          2,
+          9,
+          1,
+          4,
+          5,
+          8
+        ],
+        "selectedGlyphOfSound": "5"
+      },
+      "studyresult": 123,
+      "duration": 0.535,
+      "task": 2,
+      "run": 11,
+      "order": null,
+      "created_at": "2021-07-09T19:30:47.538Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 7,
+          "title": "Synthesizer Voice C Note Chord Arp",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.842540080379946,
+            "pitch": 0.24239434783609903,
+            "chroma": [
+              0.8105224815300311,
+              0.8510699654663889,
+              0.8923036429483551,
+              0.9355910958182526,
+              0.9879854585249623,
+              0.9707407185170939,
+              0.8946299039382474,
+              0.8210912162146206,
+              0.7656005511842725,
+              0.7419614807812899,
+              0.724588786749059,
+              0.7316652252226471
+            ],
+            "brightness": 0.03409028897119394,
+            "sharpness": 0.6081566978715272,
+            "richness": 0.8300344040024591,
+            "pitchiness": 50.340236868150335
+          },
+          "published_at": "2021-07-08T19:22:50.629Z",
+          "created_at": "2021-07-08T19:22:36.964Z",
+          "updated_at": "2021-07-08T19:22:50.707Z"
+        }
+      ]
+    },
+    {
+      "id": 677,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          6,
+          1,
+          5,
+          2,
+          3,
+          7,
+          8,
+          9,
+          4
+        ],
+        "selectedGlyphOfSound": "9"
+      },
+      "studyresult": 123,
+      "duration": 0.415,
+      "task": 2,
+      "run": 12,
+      "order": null,
+      "created_at": "2021-07-09T19:30:52.480Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 4,
+          "title": "A - Piano Chord",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7060780890406967,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.7063218581312697,
+              0.7040980226194334,
+              0.716203799455985,
+              0.6729603300633279,
+              0.7212102625491336,
+              0.6829091972712283,
+              0.6328521476699275,
+              0.6088101224037722,
+              0.6110121628961495,
+              0.6535414685367467,
+              0.6267413145695009,
+              0.6464759137049113
+            ],
+            "brightness": 0.07475871296075312,
+            "sharpness": 0.70589368831057,
+            "richness": 0.8744643870074363,
+            "pitchiness": -7.511347064326603
+          },
+          "published_at": "2021-07-08T19:20:26.879Z",
+          "created_at": "2021-07-08T19:20:13.980Z",
+          "updated_at": "2021-07-09T13:31:49.409Z"
+        }
+      ]
+    },
+    {
+      "id": 678,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          7,
+          4,
+          8,
+          5,
+          2,
+          1,
+          9,
+          3,
+          6
+        ],
+        "selectedGlyphOfSound": "3"
+      },
+      "studyresult": 123,
+      "duration": 0.447,
+      "task": 2,
+      "run": 13,
+      "order": null,
+      "created_at": "2021-07-09T19:30:56.440Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 8,
+          "title": "shape A1",
+          "copyleft": "LE",
+          "data": {
+            "loudness": 0.4283038684167979,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.8642060561803071,
+              0.8145294576718423,
+              0.8204542502453334,
+              0.772988517766228,
+              0.7855526730792214,
+              0.7439140900126092,
+              0.7005773648784146,
+              0.7216548218782713,
+              0.7827750187279,
+              0.8251326660913615,
+              0.8069097920550697,
+              0.8407812203767958
+            ],
+            "brightness": 0.10194172918053145,
+            "sharpness": 0.7393978469377224,
+            "richness": 0.8059203891491404,
+            "pitchiness": 446.7928992456045
+          },
+          "published_at": "2021-07-08T19:23:25.183Z",
+          "created_at": "2021-07-08T19:23:22.089Z",
+          "updated_at": "2021-07-08T19:23:25.252Z"
+        }
+      ]
+    },
+    {
+      "id": 679,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          8,
+          1,
+          3,
+          6,
+          4,
+          2,
+          5,
+          7,
+          9
+        ],
+        "selectedGlyphOfSound": "7"
+      },
+      "studyresult": 123,
+      "duration": 0.566,
+      "task": 2,
+      "run": 14,
+      "order": null,
+      "created_at": "2021-07-09T19:31:01.702Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 2,
+          "title": "14",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.5906972001397574,
+            "pitch": 0.17992497953194908,
+            "chroma": [
+              0.85856522248537,
+              0.8727342013575583,
+              0.9283635265048464,
+              0.9472929405038164,
+              0.9381635404033989,
+              0.913294461338472,
+              0.8459117994033074,
+              0.8288288405858202,
+              0.8097815554495135,
+              0.778182225012768,
+              0.747590151991024,
+              0.7900344436412445
+            ],
+            "brightness": 0.005644483272596508,
+            "sharpness": 0.5557709391833638,
+            "richness": 0.6960567557472784,
+            "pitchiness": 5.997133858807514
+          },
+          "published_at": "2021-07-08T19:18:52.072Z",
+          "created_at": "2021-07-08T19:18:50.187Z",
+          "updated_at": "2021-07-08T19:18:52.146Z"
+        }
+      ]
+    },
+    {
+      "id": 680,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          4,
+          5,
+          1,
+          2,
+          7,
+          6,
+          8,
+          3,
+          9
+        ],
+        "selectedGlyphOfSound": "3"
+      },
+      "studyresult": 123,
+      "duration": 0.547,
+      "task": 2,
+      "run": 15,
+      "order": null,
+      "created_at": "2021-07-09T19:31:06.909Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 9,
+          "title": "ASBS - House Chord 001",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.7087352771050646,
+            "pitch": 0.6075835821299205,
+            "chroma": [
+              0.8397908935373465,
+              0.7707727809399774,
+              0.8482484412504023,
+              0.8048825816811622,
+              0.7964618741774596,
+              0.6310132182545046,
+              0.6246425004336889,
+              0.7235401404464245,
+              0.7580876742191336,
+              0.8277959452699488,
+              0.8330639215648348,
+              0.8328058831658863
+            ],
+            "brightness": 0.07042829560246648,
+            "sharpness": 0.7204715710244354,
+            "richness": 0.8883833635946844,
+            "pitchiness": -26.805179544732923
+          },
+          "published_at": "2021-07-08T19:24:44.635Z",
+          "created_at": "2021-07-08T19:24:38.110Z",
+          "updated_at": "2021-07-08T19:24:44.679Z"
+        }
+      ]
+    },
+    {
+      "id": 681,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          5,
+          1,
+          7,
+          8,
+          3,
+          9,
+          4,
+          6,
+          2
+        ],
+        "selectedGlyphOfSound": "6"
+      },
+      "studyresult": 123,
+      "duration": 0.579,
+      "task": 2,
+      "run": 16,
+      "order": null,
+      "created_at": "2021-07-09T19:31:14.097Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 3,
+          "title": "Huge Explosion",
+          "copyleft": null,
+          "data": {
+            "loudness": 0.33970987962725047,
+            "pitch": 0.33043997736393965,
+            "chroma": [
+              0.8475196420393066,
+              0.7329589821720531,
+              0.7310652221882565,
+              0.7382663860757638,
+              0.7036386420582884,
+              0.6641541283423462,
+              0.6792148457983992,
+              0.7835470619727786,
+              0.8930897871686895,
+              0.9144925831144205,
+              0.8553145196060931,
+              0.8545517432784531
+            ],
+            "brightness": 0.0212910516208202,
+            "sharpness": 1,
+            "richness": 0.7658197686808423,
+            "pitchiness": 1917.5143562384367
+          },
+          "published_at": "2021-07-08T19:19:37.845Z",
+          "created_at": "2021-07-08T19:19:35.326Z",
+          "updated_at": "2021-07-08T19:19:37.910Z"
+        }
+      ]
+    },
+    {
+      "id": 682,
+      "data": {
+        "glyphTypeName": "D3GlyphMix",
+        "displayedSounds": [
+          9,
+          8,
+          4,
+          6,
+          3,
+          5,
+          7,
+          1,
+          2
+        ],
+        "selectedGlyphOfSound": "1"
+      },
+      "studyresult": 123,
+      "duration": 0.604,
+      "task": 2,
+      "run": 17,
+      "order": null,
+      "created_at": "2021-07-09T19:31:20.001Z",
+      "updated_at": "2021-07-09T19:31:20.134Z",
+      "objects": [
+        {
+          "id": 1,
+          "title": "voice a",
+          "copyleft": "M.Manone",
+          "data": {
+            "loudness": 1,
+            "pitch": 0.3115456969192398,
+            "chroma": [
+              0.756050119126574,
+              0.5836937688522811,
+              0.5613249304815885,
+              0.568152609974613,
+              0.6005040275228424,
+              0.6773725233578638,
+              0.6953454479411103,
+              0.7762039259682562,
+              0.9136450746241803,
+              0.9620052073486541,
+              0.9050444538899449,
+              0.8134056286181832
+            ],
+            "brightness": 0.05504972833361367,
+            "sharpness": 0.7139670046949237,
+            "richness": 0.856831297093263,
+            "pitchiness": 2.8458977938642542
+          },
+          "published_at": "2021-07-08T19:17:46.300Z",
+          "created_at": "2021-07-08T19:17:44.294Z",
+          "updated_at": "2021-07-08T19:17:46.345Z"
+        }
+      ]
+    }
+  ]
+}]
