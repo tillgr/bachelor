@@ -77,10 +77,10 @@ export default class Main extends Vue {
 
 
   //Variablen für jedes Test Setting
-  private _currentType: string = 'D3Glyph';
+  private _currentType: string = 'D3GlyphMix';
   private _stepCount: number = 5;
   private _currentPermutationMode: PermutationMode = PermutationMode.single;
-  private _featureIndex = 0; //0...4
+  private _featureIndex = 3; //0...4
 
 
   permutationKey = Object.keys(this.features)[this._featureIndex];
